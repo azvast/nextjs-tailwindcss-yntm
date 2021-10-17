@@ -114,31 +114,35 @@ export default function HomePage() {
             <div>
               <h3 className='mb-2'>Bidding History</h3>
               <table className='text-left'>
-                <tr className='text-lg border-b'>
-                  <th className='w-48'>Price</th>
-                  <th className='w-80'>From</th>
-                  <th className='w-48'>Date</th>
-                </tr>
-                <tr className='text-lg border-b bg-green-50'>
-                  <td>3.75 Ξ</td>
-                  <td>xX49238239482aw32x</td>
-                  <td>5 seconds ago</td>
-                </tr>
-                <tr className='text-lg border-b bg-green-50'>
-                  <td>2.75 Ξ</td>
-                  <td>xX49238239482aw32x</td>
-                  <td>10 seconds ago</td>
-                </tr>
-                <tr className='text-lg border-b bg-green-50'>
-                  <td>1.75 Ξ</td>
-                  <td>xX49238239482aw32x</td>
-                  <td>15 seconds ago</td>
-                </tr>
-                <tr className='text-lg border-b bg-green-50'>
-                  <td>0.75 Ξ</td>
-                  <td>xX49238239482aw32x</td>
-                  <td>20 seconds ago</td>
-                </tr>
+                <thead className='text-lg border-b'>
+                  <tr>
+                    <th className='w-48'>Price</th>
+                    <th className='w-80'>From</th>
+                    <th className='w-48'>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className='text-lg border-b bg-green-50'>
+                    <td>3.75 Ξ</td>
+                    <td>xX49238239482aw32x</td>
+                    <td>5 seconds ago</td>
+                  </tr>
+                  <tr className='text-lg border-b bg-green-50'>
+                    <td>2.75 Ξ</td>
+                    <td>xX49238239482aw32x</td>
+                    <td>10 seconds ago</td>
+                  </tr>
+                  <tr className='text-lg border-b bg-green-50'>
+                    <td>1.75 Ξ</td>
+                    <td>xX49238239482aw32x</td>
+                    <td>15 seconds ago</td>
+                  </tr>
+                  <tr className='text-lg border-b bg-green-50'>
+                    <td>0.75 Ξ</td>
+                    <td>xX49238239482aw32x</td>
+                    <td>20 seconds ago</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
