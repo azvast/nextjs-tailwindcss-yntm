@@ -110,7 +110,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className='flex justify-center my-28'>
+          <div className='flex justify-center mt-28 mb-36'>
             <div>
               <h3 className='mb-2'>Bidding History</h3>
               <table className='text-left'>
