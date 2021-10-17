@@ -13,45 +13,38 @@ export default function HomePage() {
     <>
       <Seo />
 
-      <main className='bg-dark'>
-        <ReactPlayer
-          url='https://www.youtube.com/watch?v=TkHLetfj_pg'
-          loop={true}
-          muted={true}
-          playing={false}
-        />
-
-        <header className='container sticky top-0 flex justify-between p-3 mx-auto'>
-          <UnstyledLink href='#'>
-            <Image
-              src='/images/YNTM-Logo.png'
-              alt='You Never Taggeed Me'
-              width={231}
-              height={47}
-            />
-          </UnstyledLink>
-          <div className='flex items-center gap-5'>
-            <CustomLink href='#about'>ABOUT</CustomLink>
-            <UnstyledLink href='https://twitter.com/'>
+      <main>
+        <section className='relative h-full'>
+          <header className='container flex justify-between p-3 mx-auto'>
+            <UnstyledLink href='#'>
               <Image
-                src='/images/social-twitter.png'
-                alt='Twitter Icon'
-                width={32}
-                height={32}
+                src='/images/YNTM-Logo.png'
+                alt='You Never Taggeed Me'
+                width={231}
+                height={47}
               />
             </UnstyledLink>
-            <UnstyledLink href='https://discord.gg/'>
-              <Image
-                src='/images/social-discord.png'
-                alt='Discord Icon'
-                width={32}
-                height={32}
-              />
-            </UnstyledLink>
-            <Button className='rounded-full'>Connect Wallet</Button>
-          </div>
-        </header>
-        <section>
+            <div className='flex items-center gap-5'>
+              <CustomLink href='#about'>ABOUT</CustomLink>
+              <UnstyledLink href='https://twitter.com/'>
+                <Image
+                  src='/images/social-twitter.png'
+                  alt='Twitter Icon'
+                  width={32}
+                  height={32}
+                />
+              </UnstyledLink>
+              <UnstyledLink href='https://discord.gg/'>
+                <Image
+                  src='/images/social-discord.png'
+                  alt='Discord Icon'
+                  width={32}
+                  height={32}
+                />
+              </UnstyledLink>
+              <Button className='rounded-full'>Connect Wallet</Button>
+            </div>
+          </header>
           <div className='flex flex-col items-center justify-center min-h-screen text-center text-white layout'>
             <Image
               src='/images/YNTM.png'
@@ -64,6 +57,15 @@ export default function HomePage() {
               Bid now
             </ButtonLink>
           </div>
+          <ReactPlayer
+            className='absolute top-0 -z-10'
+            width='100%'
+            height='100%'
+            loop={true}
+            muted={true}
+            playing={true}
+            url='https://www.youtube.com/watch?v=TkHLetfj_pg'
+          />
         </section>
 
         <section id='bid'>

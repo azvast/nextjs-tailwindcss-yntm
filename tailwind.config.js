@@ -44,6 +44,9 @@ module.exports = {
       animation: {
         flicker: 'flicker 3s linear infinite',
       },
+      zIndex: {
+        '-10': '-10'
+      }
     },
   },
   variants: {
