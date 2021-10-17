@@ -14,7 +14,7 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <section className='relative h-full'>
+        <section className='relative'>
           <header className='container flex justify-between p-3 mx-auto'>
             <UnstyledLink href='#'>
               <Image
@@ -69,27 +69,79 @@ export default function HomePage() {
         </section>
 
         <section id='bid'>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
-          <h1>adsfasd</h1>
+          <div className='flex justify-center gap-8 mt-20'>
+            <div>
+              <Image
+                src='/images/asset.jpg'
+                alt='Asset'
+                width={500}
+                height={312}
+              />
+            </div>
+            <div className='flex flex-col justify-center'>
+              <h3 className='text-gray-500'>Sebastien Micke</h3>
+              <h1>You Never Tagged Me</h1>
+              <div className='flex mt-4 divide-x'>
+                <div className='pr-5'>
+                  <div className='font-semibold'>Current Bid</div>
+                  <div className='text-2xl font-bold'>{3.75} ETH</div>
+                  <div className='font-semibold text-gray-500'>
+                    ${'13,448.68'}
+                  </div>
+                </div>
+                <div className='pl-5'>
+                  <div className='font-semibold'>Auction ends In</div>
+                  <div className='flex gap-3'>
+                    <div className='flex flex-col'>
+                      <div className='text-2xl font-bold'>{14}</div>
+                      <div className='font-semibold text-gray-500'>Hours</div>
+                    </div>
+                    <div className='flex flex-col'>
+                      <div className='text-2xl font-bold'>{9}</div>
+                      <div className='font-semibold text-gray-500'>Minutes</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <Button className='mt-5 rounded-full' variant='outline'>
+                  Bid now
+                </Button>
+              </div>
+            </div>
+          </div>
+          <div className='flex justify-center my-28'>
+            <div>
+              <h3 className='mb-2'>Bidding History</h3>
+              <table className='text-left'>
+                <tr className='text-lg border-b'>
+                  <th className='w-48'>Price</th>
+                  <th className='w-80'>From</th>
+                  <th className='w-48'>Date</th>
+                </tr>
+                <tr className='text-lg border-b bg-green-50'>
+                  <td>3.75 Ξ</td>
+                  <td>xX49238239482aw32x</td>
+                  <td>5 seconds ago</td>
+                </tr>
+                <tr className='text-lg border-b bg-green-50'>
+                  <td>2.75 Ξ</td>
+                  <td>xX49238239482aw32x</td>
+                  <td>10 seconds ago</td>
+                </tr>
+                <tr className='text-lg border-b bg-green-50'>
+                  <td>1.75 Ξ</td>
+                  <td>xX49238239482aw32x</td>
+                  <td>15 seconds ago</td>
+                </tr>
+                <tr className='text-lg border-b bg-green-50'>
+                  <td>0.75 Ξ</td>
+                  <td>xX49238239482aw32x</td>
+                  <td>20 seconds ago</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </section>
       </main>
     </>

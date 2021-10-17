@@ -47,7 +47,7 @@ module.exports = {
       zIndex: {
         '-10': '-10'
       }
-    },
+    }
   },
   variants: {
     extend: {},

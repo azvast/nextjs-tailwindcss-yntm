@@ -6,6 +6,7 @@ enum ButtonVariant {
   'dark',
   'light',
   'primary',
+  'outline',
 }
 
 type ButtonProps = {
@@ -38,6 +39,7 @@ export default function Button({
             variant === 'light',
           'bg-primary-400 text-black hover:bg-primary-400/90 hover:text-black border-primary-500 disabled:hover:bg-primary-400 disabled:brightness-75  focus-visible:text-dark':
             variant === 'primary',
+          'bg-white hover:bg-dark': variant === 'outline',
         },
         'disabled:cursor-not-allowed',
         isLoading &&
