@@ -25,6 +25,30 @@
       U+2215, U+FEFF, U+FFFD;
   }
 
+  @font-face {
+    font-family: 'Calibre';
+    font-style: normal;
+    font-weight: 100;
+    font-display: optional;
+    src: url('/fonts/calibre/CalibreBlack.otf');
+  }
+
+  @font-face {
+    font-family: 'Calibre';
+    font-style: italic;
+    font-weight: 100;
+    font-display: optional;
+    src: url('/fonts/calibre/CalibreBlackItalic.otf');
+  }
+
+  @font-face {
+    font-family: 'Calibre';
+    font-style: normal;
+    font-weight: 900;
+    font-display: optional;
+    src: url('/fonts/calibre/CalibreBold.otf');
+  }
+
   .cursor-newtab {
     cursor: url('/images/new-tab.png') 10 10, pointer;
   }

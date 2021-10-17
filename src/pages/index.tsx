@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player/youtube';
 
 import Button from '@/components/buttons/Button';
 import ButtonLink from '@/components/links/ButtonLink';
-import CustomLink from '@/components/links/CustomLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
 
@@ -15,17 +14,19 @@ export default function HomePage() {
 
       <main>
         <section className='relative'>
-          <header className='container flex justify-between p-3 mx-auto'>
+          <header className='fixed z-50 flex justify-between w-full py-3 px-36'>
             <UnstyledLink href='#'>
               <Image
                 src='/images/YNTM-Logo.png'
                 alt='You Never Taggeed Me'
-                width={231}
-                height={47}
+                width={280}
+                height={50}
               />
             </UnstyledLink>
             <div className='flex items-center gap-5'>
-              <CustomLink href='#about'>ABOUT</CustomLink>
+              <UnstyledLink href='#about' className='font-bold hover:text-pink'>
+                ABOUT
+              </UnstyledLink>
               <UnstyledLink href='https://twitter.com/'>
                 <Image
                   src='/images/social-twitter.png'
@@ -42,7 +43,9 @@ export default function HomePage() {
                   height={32}
                 />
               </UnstyledLink>
-              <Button className='rounded-full'>Connect Wallet</Button>
+              <Button className='border-none rounded-full hover:bg-pink'>
+                Connect Wallet
+              </Button>
             </div>
           </header>
           <div className='flex flex-col items-center justify-center min-h-screen text-center text-white layout'>

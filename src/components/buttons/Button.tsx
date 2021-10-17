@@ -29,7 +29,7 @@ export default function Button({
       {...rest}
       disabled={disabled}
       className={clsx(
-        'py-2 px-5 font-bold hover:text-primary-400 uppercase',
+        'py-2 px-5 font-bold uppercase',
         'border border-gray-600 shadow-sm',
         'focus:outline-none focus-visible:text-primary-400',
         {
@@ -39,7 +39,8 @@ export default function Button({
             variant === 'light',
           'bg-primary-400 text-black hover:bg-primary-400/90 hover:text-black border-primary-500 disabled:hover:bg-primary-400 disabled:brightness-75  focus-visible:text-dark':
             variant === 'primary',
-          'bg-white hover:bg-dark': variant === 'outline',
+          'bg-white hover:bg-pink hover:border-pink hover:text-white':
+            variant === 'outline',
         },
         'disabled:cursor-not-allowed',
         isLoading &&

@@ -18,7 +18,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Inter', ...fontFamily.sans],
+        primary: ['Calibre', ...fontFamily.sans],
       },
       colors: {
         primary: {
@@ -27,6 +27,7 @@ module.exports = {
           500: withOpacity('--tw-clr-primary-500'),
         },
         dark: '#222222',
+        pink: '#DD3E59'
       },
       keyframes: {
         flicker: {
