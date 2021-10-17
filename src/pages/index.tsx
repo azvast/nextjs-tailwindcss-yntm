@@ -11,7 +11,7 @@ import Seo from '@/components/Seo';
 export default function HomePage() {
   return (
     <>
-      <Seo templateTitle='Home' />
+      <Seo />
 
       <main className='bg-dark'>
         <ReactPlayer
