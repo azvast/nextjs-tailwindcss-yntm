@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import ReactPlayer from 'react-player/youtube';
 
 import Button from '@/components/buttons/Button';
 import ButtonLink from '@/components/links/ButtonLink';
@@ -63,15 +62,16 @@ export default function HomePage() {
               Bid now
             </ButtonLink>
           </div>
-          <ReactPlayer
-            className='absolute -top-10 -z-10 -right-8'
-            width='130%'
-            height='130%'
-            loop={true}
-            muted={true}
-            playing={true}
-            url='https://www.youtube.com/watch?v=TkHLetfj_pg'
-          />
+          <video
+            autoPlay
+            loop
+            muted
+            className='absolute top-0 -z-10'
+            width='100%'
+            height='100%'
+          >
+            <source src='/video/intro.mp4' />
+          </video>
         </section>
 
         <section id='bid'>
