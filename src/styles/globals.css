@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://p.typekit.net/p.css?s=1&k=cbs4irr&ht=tk&f=47000.47001.47008.47013.47015.47018.47022.47026.47028.47030.47036.47038&a=65251390&app=typekit&e=css");
+
 :root {
   /* Customize these variable */
   /* https://github.com/adamwathan/tailwind-css-variable-text-opacity-demo */
@@ -26,83 +28,75 @@
   } 
 
   @font-face {
-    font-family: 'Calibre';
-    font-style: bold;
-    font-weight: 900;
-    src: url('/fonts/calibre/CalibreBlack.otf');
+    font-family:"loos-compressed";
+    src:url("https://use.typekit.net/af/1815bc/00000000000000007735e7eb/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/1815bc/00000000000000007735e7eb/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/1815bc/00000000000000007735e7eb/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:700;
   }
-
+  
   @font-face {
-    font-family: 'CalibreBlackItalic';
-    src: url('/fonts/calibre/CalibreBlackItalic.otf');
+    font-family:"loos-compressed";
+    src:url("https://use.typekit.net/af/b62773/00000000000000007735e7e8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/b62773/00000000000000007735e7e8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/b62773/00000000000000007735e7e8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
   }
-
+  
   @font-face {
-    font-family: 'Calibre';
-    font-style: bold;
-    font-weight: 800;
-    src: url('/fonts/calibre/CalibreBold.otf');
+    font-family:"loos-condensed";
+    src:url("https://use.typekit.net/af/5eb48e/00000000000000007735e7d8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/5eb48e/00000000000000007735e7d8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/5eb48e/00000000000000007735e7d8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
   }
-
+  
   @font-face {
-    font-family: 'CalibreBoldItalic';
-    src: url('/fonts/calibre/CalibreBoldItalic.otf');
+    font-family:"loos-condensed";
+    src:url("https://use.typekit.net/af/79d5a7/00000000000000007735e7e4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/79d5a7/00000000000000007735e7e4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/79d5a7/00000000000000007735e7e4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:700;
   }
-
+  
   @font-face {
-    font-family: 'CalibreLight';
-    src: url('/fonts/calibre/CalibreLight.otf');
+    font-family:"loos-normal";
+    src:url("https://use.typekit.net/af/94d7f7/00000000000000007735e7d5/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/94d7f7/00000000000000007735e7d5/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/94d7f7/00000000000000007735e7d5/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
   }
-
+  
   @font-face {
-    font-family: 'CalibreLightItalic';
-    src: url('/fonts/calibre/CalibreLightItalic.otf');
+    font-family:"loos-normal";
+    src:url("https://use.typekit.net/af/563adc/00000000000000007735e7e9/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/563adc/00000000000000007735e7e9/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/563adc/00000000000000007735e7e9/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:700;
   }
-
+  
   @font-face {
-    font-family: 'Calibre';
-    font-style: bold;
-    font-weight: 700;
-    src: url('/fonts/calibre/CalibreMedium.otf');
+    font-family:"loos-wide";
+    src:url("https://use.typekit.net/af/18ce07/00000000000000007735e7e6/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/18ce07/00000000000000007735e7e6/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/18ce07/00000000000000007735e7e6/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
   }
-
+  
   @font-face {
-    font-family: 'CalibreMediumItalic';
-    src: url('/fonts/calibre/CalibreMediumItalic.otf');
+    font-family:"loos-wide";
+    src:url("https://use.typekit.net/af/b6af5d/00000000000000007735e7f6/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/b6af5d/00000000000000007735e7f6/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/b6af5d/00000000000000007735e7f6/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:700;
   }
-
+  
   @font-face {
-    font-family: 'Calibre';
-    font-style: normal;
-    font-weight: 100;
-    src: url('/fonts/calibre/CalibreRegular.otf');
+    font-family:"loos-extrawide";
+    src:url("https://use.typekit.net/af/847d98/00000000000000007735e7d6/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/847d98/00000000000000007735e7d6/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/847d98/00000000000000007735e7d6/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:700;
   }
-
+  
   @font-face {
-    font-family: 'CalibreRegularItalic';
-    src: url('/fonts/calibre/CalibreRegularItalic.otf');
+    font-family:"loos-extrawide";
+    src:url("https://use.typekit.net/af/8770e9/00000000000000007735e7dd/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/8770e9/00000000000000007735e7dd/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/8770e9/00000000000000007735e7dd/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
   }
-
+  
   @font-face {
-    font-family: 'Calibre';
-    font-style: bold;
-    font-weight: 500;
-    src: url('/fonts/calibre/CalibreSemibold.otf');
+    font-family:"loos-extended";
+    src:url("https://use.typekit.net/af/de2a94/00000000000000007735e7f1/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/de2a94/00000000000000007735e7f1/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/de2a94/00000000000000007735e7f1/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:700;
   }
-
+  
   @font-face {
-    font-family: 'CalibreSemiboldItalic';
-    src: url('/fonts/calibre/CalibreSemiboldItalic.otf');
-  }
-
-  @font-face {
-    font-family: 'CalibreThin';
-    src: url('/fonts/calibre/CalibreThin.otf');
-  }
-
-  @font-face {
-    font-family: 'CalibreThinItalic';
-    src: url('/fonts/calibre/CalibreThinItalic.otf');
+    font-family:"loos-extended";
+    src:url("https://use.typekit.net/af/d58668/00000000000000007735e7db/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/d58668/00000000000000007735e7db/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/d58668/00000000000000007735e7db/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
   }
 
   /* Write your own custom base styles here */

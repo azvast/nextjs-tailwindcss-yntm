@@ -29,7 +29,7 @@ export default function Button({
       {...rest}
       disabled={disabled}
       className={clsx(
-        'py-2 px-5 font-bold uppercase',
+        'pt-2 pb-1 px-5 uppercase font-light',
         'border border-gray-600 shadow-sm',
         'focus:outline-none focus-visible:text-primary-400',
         {
