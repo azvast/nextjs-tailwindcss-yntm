@@ -14,13 +14,13 @@ export default function HomePage() {
 
       <main>
         <section className='relative'>
-          <header className='fixed z-50 flex justify-between w-full py-3 px-36'>
+          <header className='fixed z-50 flex justify-between w-full px-20 py-3'>
             <UnstyledLink href='#'>
               <Image
                 src='/images/YNTM-Logo.png'
                 alt='You Never Taggeed Me'
-                width={280}
-                height={50}
+                width={150}
+                height={30}
               />
             </UnstyledLink>
             <div className='flex items-center gap-5'>
@@ -61,9 +61,9 @@ export default function HomePage() {
             </ButtonLink>
           </div>
           <ReactPlayer
-            className='absolute top-0 -z-10'
-            width='100%'
-            height='100%'
+            className='absolute -top-10 -z-10 -right-8'
+            width='130%'
+            height='130%'
             loop={true}
             muted={true}
             playing={true}

@@ -18,7 +18,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Calibre', ...fontFamily.sans],
+        primary: ['Calibre', ...fontFamily.sans], 
       },
       colors: {
         primary: {
