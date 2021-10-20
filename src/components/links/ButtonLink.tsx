@@ -23,7 +23,7 @@ export default function ButtonLink({
     <UnstyledLink
       {...rest}
       className={clsx(
-        'pt-2.5 pb-2 px-6 inline-block rounded-full font-bold hover:text-pink-600 uppercase shadow-sm',
+        'pt-2.5 pb-2 px-6 inline-block rounded-full font-light hover:text-pink-600 uppercase shadow-sm',
         {
           'bg-dark text-white': variant === 'dark',
           'bg-white text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark border-gray-400':

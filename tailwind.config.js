@@ -18,7 +18,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['loos-normal', ...fontFamily.sans], 
+        primary: ['loos-normal', ...fontFamily.sans],
       },
       colors: {
         primary: {
@@ -50,7 +50,7 @@ module.exports = {
         '-10': '-10'
       },
       padding: {
-        '1.8': '0.4rem'
+        '1.8': '0.5rem'
       }
     }
   },

@@ -117,7 +117,7 @@ export default function HomePage() {
           <div className='flex justify-center mt-28 mb-36'>
             <div>
               <h3 className='mb-2'>Bidding History</h3>
-              <table className='text-left'>
+              <table className='font-light text-left'>
                 <thead className='text-lg border-b'>
                   <tr>
                     <th className='w-48'>Price</th>
