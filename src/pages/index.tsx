@@ -75,7 +75,7 @@ export default function HomePage() {
         </section>
 
         <section id='bid'>
-          <div className='flex justify-center gap-8 mt-20'>
+          <div className='flex justify-center gap-8 mt-80'>
             <div>
               <Image
                 src='/images/asset.jpg'
@@ -85,24 +85,24 @@ export default function HomePage() {
               />
             </div>
             <div className='flex flex-col justify-center'>
-              <h3 className='font-medium text-gray-500'>Sebastien Micke</h3>
+              <h3 className='font-medium text-lgray'>Sebastien Micke</h3>
               <h1 className='font-bold'>You Never Tagged Me</h1>
               <div className='flex mt-4 divide-x'>
                 <div className='pr-5'>
                   <div className='font-semibold'>Current Bid</div>
                   <div className='text-2xl font-bold'>{3.75} ETH</div>
-                  <div className='font-bold text-gray-500'>${'13,448.68'}</div>
+                  <div className='font-bold text-lgray'>${'13,448.68'}</div>
                 </div>
                 <div className='pl-5'>
                   <div className='font-semibold'>Auction ends In</div>
                   <div className='flex gap-3'>
                     <div className='flex flex-col'>
                       <div className='text-2xl font-bold'>{14}</div>
-                      <div className='font-bold text-gray-500'>Hours</div>
+                      <div className='font-bold text-lgray'>Hours</div>
                     </div>
                     <div className='flex flex-col'>
                       <div className='text-2xl font-bold'>{9}</div>
-                      <div className='font-bold text-gray-500'>Minutes</div>
+                      <div className='font-bold text-lgray'>Minutes</div>
                     </div>
                   </div>
                 </div>

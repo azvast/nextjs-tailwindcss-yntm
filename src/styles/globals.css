@@ -109,7 +109,7 @@
   }
 
   h3 {
-    @apply text-lg font-bold md:text-2xl font-primary;
+    @apply text-lg font-bold md:text-xl font-primary;
   }
 
   h4 {

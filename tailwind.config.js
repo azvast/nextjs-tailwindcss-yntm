@@ -18,7 +18,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['loos-condensed', ...fontFamily.sans], 
+        primary: ['loos-normal', ...fontFamily.sans], 
       },
       colors: {
         primary: {
@@ -27,7 +27,8 @@ module.exports = {
           500: withOpacity('--tw-clr-primary-500'),
         },
         dark: '#222222',
-        pink: '#DD3E59'
+        pink: '#DD3E59',
+        lgray: '#b7b7b7'
       },
       keyframes: {
         flicker: {
@@ -47,6 +48,9 @@ module.exports = {
       },
       zIndex: {
         '-10': '-10'
+      },
+      padding: {
+        '1.8': '0.4rem'
       }
     }
   },
