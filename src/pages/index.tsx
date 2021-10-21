@@ -18,8 +18,8 @@ export default function HomePage() {
               <Image
                 src='/images/YNTM-Logo.png'
                 alt='You Never Taggeed Me'
-                width={150}
-                height={28}
+                width={180}
+                height={39}
               />
             </UnstyledLink>
             <div className='flex items-center gap-5'>
