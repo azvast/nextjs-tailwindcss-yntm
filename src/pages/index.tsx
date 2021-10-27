@@ -80,12 +80,11 @@ export default function HomePage() {
             className='absolute top-0 object-cover h-full -z-10'
             width='100%'
             height='100%'
-            poster='/video/intro.png'
           >
-            <source src='/video/intros.mp4' />
+            <source src='/video/intro.mp4' />
           </video>
           <audio autoPlay>
-            <source src='/music/backgrounds.mp3' type='audio/mpeg' />
+            <source src='/music/background.mp3' type='audio/mpeg' />
           </audio>
         </section>
       </main>
