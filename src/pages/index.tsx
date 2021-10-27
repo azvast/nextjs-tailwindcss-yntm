@@ -91,7 +91,7 @@ export default function HomePage() {
                     account.slice(-4) +
                     ' ' +
                     '(' +
-                    etherBalance +
+                    formatEther(etherBalance || 0) +
                     ' ETH)'
                   : 'CONNECT WALLET'}
               </Button>
