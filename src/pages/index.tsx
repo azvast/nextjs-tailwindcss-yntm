@@ -84,7 +84,7 @@ export default function HomePage() {
             <source src='/video/intro.mp4' />
           </video>
           <audio autoPlay>
-            <source src='/music/backgrounda.mp3' type='audio/mpeg' />
+            <source src='/music/background.mp3' type='audio/mpeg' />
           </audio>
         </section>
       </main>
