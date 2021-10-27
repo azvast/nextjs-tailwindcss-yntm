@@ -50,10 +50,10 @@ export default function HomePage() {
               <Image
                 src='/images/YNTM-Logo-short.png'
                 alt='YNTM'
-                width={211}
-                height={202}
+                width={125}
+                height={120}
               />
-              <div className='flex items-center justify-center gap-8 p-6 mt-5 text-black border border-black rounded-xl'>
+              <div className='flex items-center justify-center gap-8 p-6 mt-20 text-black border border-black rounded-xl'>
                 <div className='time-box'>
                   <p className='time-value'>{time.days}</p>
                   <p className='time-desc'>DAYS</p>
@@ -77,14 +77,14 @@ export default function HomePage() {
             autoPlay
             loop
             muted
-            className='absolute top-0 object-cover h-full -z-10'
+            className='absolute top-0 object-cover h-full opacity-0 -z-10 intro-video'
             width='100%'
             height='100%'
           >
             <source src='/video/intro.mp4' />
           </video>
           <audio autoPlay>
-            <source src='/music/background.mp3' type='audio/mpeg' />
+            <source src='/music/backgrounda.mp3' type='audio/mpeg' />
           </audio>
         </section>
       </main>
