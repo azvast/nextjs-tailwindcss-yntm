@@ -147,7 +147,7 @@ export default function HomePage() {
             height='100%'
             poster='/video/intro.png'
           >
-            <source src='/videos/intro.mp4' />
+            <source src='/video/intro.mp4' />
           </video>
           <audio autoPlay>
             <source src='/music/background.mp3' type='audio/mpeg' />
