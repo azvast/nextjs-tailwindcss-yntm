@@ -286,7 +286,14 @@
   }
 }
 
-@media only screen and (max-width: 640px) {
+.almost-live-image {
+  display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .almost-live-image {
+    display: block !important;
+  }
   .time-box {
     width: 70px;
   }

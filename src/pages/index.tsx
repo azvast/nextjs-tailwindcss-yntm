@@ -72,6 +72,7 @@ export default function HomePage() {
                 </div>
               </div>
               <Image
+                className='almost-live-image'
                 src='/images/almost-live.png'
                 alt='alimost live'
                 width={394}
@@ -83,7 +84,7 @@ export default function HomePage() {
             autoPlay
             loop
             muted
-            className='absolute top-0 object-cover h-full opacity-0 -z-10 intro-video'
+            className='absolute top-0 hidden object-cover h-full opacity-0 -z-10 intro-video md:block'
             width='100%'
             height='100%'
           >
