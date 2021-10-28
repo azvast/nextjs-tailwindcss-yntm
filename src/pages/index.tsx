@@ -53,7 +53,7 @@ export default function HomePage() {
                 width={125}
                 height={120}
               />
-              <div className='flex items-center justify-center gap-8 p-6 mt-20 text-black border border-black rounded-xl'>
+              <div className='flex items-center justify-center gap-8 p-6 mt-20 mb-12 text-black border border-black rounded-xl'>
                 <div className='time-box'>
                   <p className='time-value'>{time.days}</p>
                   <p className='time-desc'>DAYS</p>
@@ -71,6 +71,12 @@ export default function HomePage() {
                   <p className='time-desc'>SECONDS</p>
                 </div>
               </div>
+              <Image
+                src='/images/almost-live.png'
+                alt='alimost live'
+                width={394}
+                height={50}
+              />
             </div>
           </div>
           <video
@@ -83,7 +89,7 @@ export default function HomePage() {
           >
             <source src='/video/intro.mp4' />
           </video>
-          <audio autoPlay>
+          <audio autoPlay loop>
             <source src='/music/background.mp3' type='audio/mpeg' />
           </audio>
         </section>
