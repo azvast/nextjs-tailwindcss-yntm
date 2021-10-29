@@ -78,8 +78,8 @@ export default function HomePage() {
                 width={394}
                 height={50}
               />
-              <p className='absolute left-0 right-0 text-center text-black bottom-3'>
-                For best results view on a web3 enabled application
+              <p className='absolute left-0 right-0 text-center text-black bottom-3 block md:hidden'>
+                For best results view on desktop.
               </p>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function HomePage() {
           >
             <source src='/video/intro.mp4' />
           </video>
-          <audio autoPlay loop>
+          <audio autoPlay>
             <source src='/music/background.mp3' type='audio/mpeg' />
           </audio>
         </section>
