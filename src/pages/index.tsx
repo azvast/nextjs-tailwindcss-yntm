@@ -91,10 +91,10 @@ export default function HomePage() {
             width='100%'
             height='100%'
           >
-            <source src='/video/intro1.mp4' />
+            <source src='/video/intro.mp4' />
           </video>
           <audio autoPlay>
-            <source src='/music/background1.mp3' type='audio/mpeg' />
+            <source src='/music/background.mp3' type='audio/mpeg' />
           </audio>
         </section>
       </main>
