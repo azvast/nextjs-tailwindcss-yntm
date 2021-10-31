@@ -12,7 +12,7 @@ export default function HomePage() {
   });
 
   useEffect(() => {
-    const finalDate = new Date('Nov 1, 2021 10:00:00').getTime();
+    const finalDate = new Date('Nov 2, 2021 20:00:00 PST').getTime();
 
     const intervalId = setInterval(() => {
       const distance = finalDate - Date.now();
@@ -53,23 +53,26 @@ export default function HomePage() {
                 width={125}
                 height={120}
               />
-              <div className='flex items-center justify-center gap-6 p-5 mt-16 mb-12 text-black border border-black time-container rounded-xl'>
-                <div className='time-box'>
-                  <p className='time-value'>{time.days}</p>
-                  <p className='time-desc'>DAYS</p>
+              <div className='p-5 mt-16 mb-12 text-black border border-black time-container rounded-xl'>
+                <div className='flex items-center justify-center gap-6'>
+                  <div className='time-box'>
+                    <p className='time-value'>{time.days}</p>
+                    <p className='time-desc'>DAYS</p>
+                  </div>
+                  <div className='time-box'>
+                    <p className='time-value'>{time.hours}</p>
+                    <p className='time-desc'>HOURS</p>
+                  </div>
+                  <div className='time-box'>
+                    <p className='time-value'>{time.minutes}</p>
+                    <p className='time-desc'>MINUTES</p>
+                  </div>
+                  <div className='time-box'>
+                    <p className='time-value'>{time.seconds}</p>
+                    <p className='time-desc'>SECONDS</p>
+                  </div>
                 </div>
-                <div className='time-box'>
-                  <p className='time-value'>{time.hours}</p>
-                  <p className='time-desc'>HOURS</p>
-                </div>
-                <div className='time-box'>
-                  <p className='time-value'>{time.minutes}</p>
-                  <p className='time-desc'>MINUTES</p>
-                </div>
-                <div className='time-box'>
-                  <p className='time-value'>{time.seconds}</p>
-                  <p className='time-desc'>SECONDS</p>
-                </div>
+                <p className='mt-5 text-2xl'>UNTIL AUCTION STARTS</p>
               </div>
               <Image
                 className='almost-live-image'
