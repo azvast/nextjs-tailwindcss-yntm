@@ -53,7 +53,7 @@ export default function HomePage() {
                 width={125}
                 height={120}
               />
-              <div className='flex items-center justify-center gap-6 p-5 mt-16 mb-12 text-black border border-black rounded-xl'>
+              <div className='flex items-center justify-center gap-6 p-5 mt-16 mb-12 text-black border border-black time-container rounded-xl'>
                 <div className='time-box'>
                   <p className='time-value'>{time.days}</p>
                   <p className='time-desc'>DAYS</p>
@@ -78,7 +78,7 @@ export default function HomePage() {
                 width={394}
                 height={50}
               />
-              <p className='absolute left-0 right-0 text-center text-black bottom-3 block md:hidden'>
+              <p className='absolute left-0 right-0 block text-center text-black bottom-3 md:hidden'>
                 For best results view on desktop.
               </p>
             </div>
@@ -91,10 +91,10 @@ export default function HomePage() {
             width='100%'
             height='100%'
           >
-            <source src='/video/intro.mp4' />
+            <source src='/video/intro1.mp4' />
           </video>
           <audio autoPlay>
-            <source src='/music/background.mp3' type='audio/mpeg' />
+            <source src='/music/background1.mp3' type='audio/mpeg' />
           </audio>
         </section>
       </main>
