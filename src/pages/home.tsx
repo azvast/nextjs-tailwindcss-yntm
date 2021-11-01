@@ -1,104 +1,21 @@
-import { formatEther } from '@ethersproject/units';
-import { useEtherBalance, useEthers } from '@usedapp/core';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 import Button from '@/components/buttons/Button';
+import Header from '@/components/Header';
 import ButtonLink from '@/components/links/ButtonLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
 
 export default function HomePage() {
-  const { activateBrowserWallet, account } = useEthers();
-  const etherBalance = useEtherBalance(account);
-
-  const [time, setTime] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
-
-  useEffect(() => {
-    const finalDate = new Date('Nov 1, 2021 10:00:00').getTime();
-
-    const intervalId = setInterval(() => {
-      const distance = finalDate - Date.now();
-      setTime({
-        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-        hours: Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        ),
-        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((distance % (1000 * 60)) / 1000),
-      });
-    }, 1000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
-
   return (
     <>
       <Seo />
 
       <main>
         <section className='relative'>
-          <header className='fixed z-50 flex justify-between w-full px-20 py-3'>
-            <UnstyledLink href='#'>
-              <Image
-                src='/images/YNTM-Logo.png'
-                alt='You Never Taggeed Me'
-                width={180}
-                height={39}
-              />
-            </UnstyledLink>
-            <div className='flex items-center gap-5'>
-              <UnstyledLink
-                href='#about'
-                className='font-light hover:text-pink'
-              >
-                ABOUT
-              </UnstyledLink>
-              <UnstyledLink href='https://twitter.com/'>
-                <Image
-                  src='/images/social-twitter.png'
-                  alt='Twitter Icon'
-                  width={32}
-                  height={32}
-                />
-              </UnstyledLink>
-              <UnstyledLink href='https://discord.gg/'>
-                <Image
-                  src='/images/social-discord.png'
-                  alt='Discord Icon'
-                  width={32}
-                  height={32}
-                />
-              </UnstyledLink>
-              <Button
-                className={
-                  account
-                    ? 'bg-blue-600 border-none rounded-full'
-                    : 'border-none rounded-full'
-                }
-                onClick={() => activateBrowserWallet()}
-              >
-                {account
-                  ? account.slice(0, 6) +
-                    '...' +
-                    account.slice(-4) +
-                    ' ' +
-                    '(' +
-                    formatEther(etherBalance || 0) +
-                    ' ETH)'
-                  : 'CONNECT WALLET'}
-              </Button>
-            </div>
-          </header>
+          <Header />
           <div className='flex flex-col items-center justify-center min-h-screen text-center text-white layout'>
-            <div className='text-center hero-mint'>
+            <div className='text-center'>
               <Image
                 src='/images/YNTM.png'
                 alt='You Never Taggeed Me'
@@ -109,32 +26,6 @@ export default function HomePage() {
                 <ButtonLink className='mt-6' href='#bid' variant='secondary'>
                   BID NOW
                 </ButtonLink>
-              </div>
-            </div>
-            <div className='count-down'>
-              <Image
-                src='/images/YNTM-Logo-short.png'
-                alt='YNTM'
-                width={211}
-                height={202}
-              />
-              <div className='flex items-center justify-center gap-8 p-6 mt-5 text-black border border-black rounded-xl'>
-                <div className='time-box'>
-                  <p className='time-value'>{time.days}</p>
-                  <p className='time-desc'>DAYS</p>
-                </div>
-                <div className='time-box'>
-                  <p className='time-value'>{time.hours}</p>
-                  <p className='time-desc'>HOURS</p>
-                </div>
-                <div className='time-box'>
-                  <p className='time-value'>{time.minutes}</p>
-                  <p className='time-desc'>MINUTES</p>
-                </div>
-                <div className='time-box'>
-                  <p className='time-value'>{time.seconds}</p>
-                  <p className='time-desc'>SECONDS</p>
-                </div>
               </div>
             </div>
           </div>
@@ -164,8 +55,8 @@ export default function HomePage() {
               />
             </div>
             <div className='flex flex-col justify-center'>
+              <h1 className='font-bold'>The Balmain Army</h1>
               <h3 className='font-medium text-lgray'>Sebastien Micke</h3>
-              <h1 className='font-bold'>You Never Tagged Me</h1>
               <div className='flex mt-4 divide-x'>
                 <div className='pr-5'>
                   <div className='font-semibold'>Current Bid</div>
@@ -187,9 +78,9 @@ export default function HomePage() {
                 </div>
               </div>
               <div>
-                {/* <Button className='mt-5 rounded-full' variant='outline'>
+                <Button className='mt-5 rounded-full' variant='outline'>
                   BID NOW
-                </Button> */}
+                </Button>
               </div>
             </div>
           </div>
