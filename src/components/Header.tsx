@@ -20,23 +20,23 @@ export default function Header() {
         />
       </UnstyledLink>
       <div className='flex items-center gap-5'>
-        <UnstyledLink href='/about' className='font-light hover:text-pink'>
+        <UnstyledLink href='/about' className='font-semibold hover:text-pink'>
           ABOUT
         </UnstyledLink>
         <UnstyledLink href='https://twitter.com/'>
           <Image
-            src='/images/social-twitter.png'
+            src='/images/opensea.png'
             alt='Twitter Icon'
-            width={32}
-            height={32}
+            width={38}
+            height={38}
           />
         </UnstyledLink>
         <UnstyledLink href='https://discord.gg/'>
           <Image
-            src='/images/social-discord.png'
+            src='/images/instagram.png'
             alt='Discord Icon'
-            width={32}
-            height={32}
+            width={38}
+            height={38}
           />
         </UnstyledLink>
         <Button

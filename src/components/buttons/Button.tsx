@@ -33,7 +33,7 @@ export default function Button({
         'border border-gray-600 shadow-sm',
         'focus:outline-none focus-visible:text-primary-400',
         {
-          'bg-dark disabled:bg-gray-700 text-white disabled:hover:text-white':
+          'bg-dark disabled:bg-gray-700 text-white disabled:hover:text-white hover:bg-pink':
             variant === 'dark',
           'bg-white disabled:bg-gray-200 text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark border-gray-400 disabled:hover:text-dark':
             variant === 'light',

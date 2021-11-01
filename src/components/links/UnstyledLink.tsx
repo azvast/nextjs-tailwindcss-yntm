@@ -32,14 +32,16 @@ export default function UnstyledLink({
   }
 
   return (
-    <a
-      target='_blank'
-      rel='noopener noreferrer'
-      href={href}
-      {...rest}
-      className={clsx(className, 'flex')}
-    >
-      {children}
-    </a>
+    <>
+      <a
+        target='_blank'
+        rel='noopener noreferrer'
+        href={href}
+        {...rest}
+        className={clsx(className, 'flex link')}
+      >
+        {children}
+      </a>
+    </>
   );
 }
