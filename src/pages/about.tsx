@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Seo from '@/components/Seo';
 
@@ -8,7 +9,7 @@ export default function HomePage() {
       <main>
         <section className='relative'>
           <Header />
-          <div className='container p-5 mx-auto'>
+          <div className='container p-5 mx-auto mb-10'>
             <h1 className='mt-32 mb-3 text-3xl'>ABOUT</h1>
             <p className='text-lg'>
               You Never Tagged Me™ sheds light upon an issue that is far too
@@ -55,6 +56,7 @@ export default function HomePage() {
             </p>
           </div>
         </section>
+        <Footer />
       </main>
     </>
   );

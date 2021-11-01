@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 import Button from '@/components/buttons/Button';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ButtonLink from '@/components/links/ButtonLink';
 import Seo from '@/components/Seo';
@@ -131,6 +132,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        <Footer />
       </main>
     </>
   );
