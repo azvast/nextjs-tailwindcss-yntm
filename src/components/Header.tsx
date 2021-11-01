@@ -23,18 +23,18 @@ export default function Header() {
         <UnstyledLink href='/about' className='font-semibold hover:text-pink'>
           ABOUT
         </UnstyledLink>
-        <UnstyledLink href='https://twitter.com/'>
+        <UnstyledLink href='https://twitter.com/sebastienmicke?lang=en'>
           <Image
-            src='/images/opensea.png'
+            src='/images/twitter.png'
             alt='Twitter Icon'
             width={38}
             height={38}
           />
         </UnstyledLink>
-        <UnstyledLink href='https://discord.gg/'>
+        <UnstyledLink href='https://instagram.com/younevertaggedme?utm_medium=copy_link'>
           <Image
             src='/images/instagram.png'
-            alt='Discord Icon'
+            alt='Instagram Icon'
             width={38}
             height={38}
           />
