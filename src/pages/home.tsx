@@ -51,7 +51,7 @@ export default function HomePage() {
                 src='/images/asset.jpg'
                 alt='Asset'
                 width={500}
-                height={312}
+                height={375}
               />
             </div>
             <div className='flex flex-col justify-center'>
