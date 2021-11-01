@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
 
 import Button from '@/components/buttons/Button';
 import Footer from '@/components/Footer';
@@ -137,12 +136,3 @@ export default function HomePage() {
     </>
   );
 }
-
-/**
- * Default info that you should change:
- * components/Seo.tsx
- * next-sitemap.js
- * public/favicon
- *
- * Please refer to the README.md
- */
