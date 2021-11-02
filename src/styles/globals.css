@@ -276,6 +276,12 @@
     brightness(95%) contrast(89%);
 }
 
+#about {
+  max-width: 1024px;
+  text-align: justify;
+  min-height: calc(100vh - 1rem);
+}
+
 @keyframes intro {
   to {
     opacity: 1;
