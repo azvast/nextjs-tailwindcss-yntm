@@ -2,7 +2,7 @@
   "name": "you-never-tagged-me",
   "version": "0.1.0",
   "private": true,
-  "engine": {
+  "engines": {
     "node": "^14.17.3",
     "yarn": "^1.22.15",
     "npm": "^6.14.13"
