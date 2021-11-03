@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 import Seo from '@/components/Seo';
 
-export default function HomePage() {
+export default function IndexPage() {
   const [time, setTime] = useState({
     days: 0,
     hours: 0,
@@ -12,7 +12,7 @@ export default function HomePage() {
   });
 
   useEffect(() => {
-    const finalDate = new Date('Nov 2, 2021 20:00:00 PST').getTime();
+    const finalDate = new Date('Nov 3, 2021 20:00:00 PST').getTime();
 
     const intervalId = setInterval(() => {
       const distance = finalDate - Date.now();
