@@ -12,7 +12,7 @@ export default function IndexPage() {
   });
 
   useEffect(() => {
-    const finalDate = new Date('Nov 3, 2021 20:00:00 PST').getTime();
+    const finalDate = new Date('Nov 5, 2021 20:00:00 PST').getTime();
 
     const intervalId = setInterval(() => {
       const distance = finalDate - Date.now();
