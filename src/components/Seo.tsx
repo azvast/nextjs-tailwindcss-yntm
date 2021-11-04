@@ -1,3 +1,4 @@
+import { TrackingHeadScript } from '@phntms/next-gtm';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
@@ -74,19 +75,7 @@ export default function Seo(props: SeoProps) {
         content='/favicon/ms-icon-144x144.png'
       />
       <meta name='theme-color' content='#ffffff' />
-      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RM1NGY386T"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-          window?.dataLayer?.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-RM1NGY386T');
-      </script>
+      <TrackingHeadScript id='G-RM1NGY386T' />
     </Head>
   );
 }
