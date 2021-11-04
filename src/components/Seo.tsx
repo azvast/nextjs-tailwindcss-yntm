@@ -80,7 +80,7 @@ export default function Seo(props: SeoProps) {
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
-          window.dataLayer.push(arguments);
+          window?.dataLayer?.push(arguments);
         }
 
         gtag('js', new Date());
