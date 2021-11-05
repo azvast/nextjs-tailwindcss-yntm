@@ -55,7 +55,7 @@ export default function IndexPage() {
               />
               <div className='p-5 mt-16 mb-12 text-black border border-black time-container rounded-xl'>
                 <div className='flex items-center justify-center gap-6'>
-                  <div className='time-box'>
+                  {/* <div className='time-box'>
                     <p className='time-value'>{time.days}</p>
                     <p className='time-desc'>DAYS</p>
                   </div>
@@ -70,7 +70,10 @@ export default function IndexPage() {
                   <div className='time-box'>
                     <p className='time-value'>{time.seconds}</p>
                     <p className='time-desc'>SECONDS</p>
-                  </div>
+                  </div> */}
+                  {/* <div className=''> */}
+                  <p className='time-value'>COMING SOON</p>
+                  {/* </div> */}
                 </div>
                 <p className='mt-5 text-2xl'>UNTIL AUCTION STARTS</p>
               </div>
