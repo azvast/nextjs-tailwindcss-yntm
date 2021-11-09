@@ -1,4 +1,3 @@
-import { TrackingHeadScript } from '@phntms/next-gtm';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
@@ -75,7 +74,6 @@ export default function Seo(props: SeoProps) {
         content='/favicon/ms-icon-144x144.png'
       />
       <meta name='theme-color' content='#ffffff' />
-      <TrackingHeadScript id='GTM-W7NGJK9' />
     </Head>
   );
 }
