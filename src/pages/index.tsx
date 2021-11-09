@@ -75,7 +75,10 @@ export default function IndexPage() {
                   <p className='time-value'>COMING SOON</p>
                   {/* </div> */}
                 </div>
-                {/* <p className='mt-5 text-2xl'>UNTIL AUCTION STARTS</p> */}
+                <p className='text-xl'>
+                  Thank you for your patience, our drop is taking longer than
+                  expected. Stay tuned for our release date
+                </p>
               </div>
               <Image
                 className='almost-live-image'

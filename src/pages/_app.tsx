@@ -1,5 +1,6 @@
 import { ChainId, DAppProvider } from '@usedapp/core';
 import { AppProps } from 'next/app';
+import { GoogleAnalytics, usePagesViews } from 'nextjs-google-analytics';
 
 import '@/styles/globals.css';
 
@@ -12,8 +13,11 @@ const config = {
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
+  usePagesViews();
+
   return (
     <DAppProvider config={config}>
+      <GoogleAnalytics strategy='lazyOnload' />
       <Component {...pageProps} />
     </DAppProvider>
   );
